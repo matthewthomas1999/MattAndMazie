@@ -25,6 +25,8 @@ Open `index.html` in a browser or use the a local server (e.g. VSCode Live Serve
 
 Use the interface as intended.
 
+You can also see the deployed application [here](https://gleaming-hotteok-34604f.netlify.app/game).
+
 ## Tech Stack
 
 <details>
