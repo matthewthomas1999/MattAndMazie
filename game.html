@@ -7,7 +7,41 @@
     <script src="game.js" defer></script>
     <link rel="stylesheet" href = "style.css"/>
 </head>
+
+<!---Navigation--->
+<header>
+    <div class="container">
+      <h1 class="logo"></h1>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Roll the Dice</a></li>
+          <li><a href="game.html">Play the Dice Game</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<!---BODY--->
+
 <body>
-    
+    <div class = "container">
+    <section id ="heading">
+        <h1> Matt and Maisie's Dice Game! </h1>
+    </section>
+    </div>
+    <div class="diceInput" id="sidesContainer">
+        <input type="number" id="sidesInput" placeholder="Enter Number Of Sides" min="3">
+    <button id="startButton">Start Game</button>
+    </div>
+    <div class="guessInput" id="guessContainer" style="display:none;">
+        <input type="number" id="guessInput" placeholder="Guess the number!">
+        <button id="guessButton">ROLL DICE!</button>
+    </div>
+    <button id="playAgainButton" style="display:none;">Play Again?</button>
+    <br>
+    <div id="messages"></div>
+    <br>
+    <div id="imageContainer"></div>
 </body>
 </html>
