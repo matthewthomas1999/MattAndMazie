@@ -55,11 +55,11 @@ Use the interface as intended.
 
 First page will look like this. Just click the button to get a random dice roll.
 
-![insert image](assets/app-home.jpg)
+![insert image](assets/app-home.jpg.png)
 
 Second page will look like this. The instructions will be on the screen, but if you enter the number of sides of your dice, and then your guess, the app will let you know if you have guessed your roll correctly.
 
-![insert image](assets/app-game.jpg)
+![insert image](assets/app-game.jpg.png)
 
 A fun gif will show if you've won or lost!
 
