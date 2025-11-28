@@ -47,9 +47,9 @@ if (userGuess < 1 || userGuess > sides){
     return;
 }
 const roll = rollDice(sides);
-messages.textContent = `You have rolled a: ${roll}!`
+messages.textContent = `You have rolled a: ${roll}`
 if (userGuess === roll) {
-    messages.textContent += " You are a winner!"
+    messages.textContent += "! You are a winner!"
     const gif1 = document.createElement('img');
     gif1.src= `assets/winner.gif`;
     imageContainer.innerHTML = "";
