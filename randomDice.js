@@ -1,22 +1,18 @@
 const diceButton = document.querySelector("#randomButton")
+const imageContainer = document.getElementById('diceOutcome');
 
 diceButton.addEventListener('click', displayDiceRoll);
 
 async function displayDiceRoll() {
-    
-    const imageContainer = document.getElementById('diceOutcome');
+
 
     try {
-    const response = await fetch('https://qrandom.io/api/random/dice')
+    const response = await fetch('https://dice-api.genzouw.com/v1/dice')
     const data = await response.json();
+
+    if (response.ok) {
     
-    if (!response.ok) {
-        throw new Error("Oh dear, help!")
-    }
-
-    else if (response.ok) {
-
-    const roll = data.dice[0];    
+    const roll = data.dice;    
   
     const img = document.createElement('img');
     img.src= `assets/dice-${roll}.png`;
@@ -29,7 +25,7 @@ async function displayDiceRoll() {
     imageContainer.textContent = "dice not found"
 
     }} catch (error) {
-        error = "Oh dear, something went wrong!!"
-        imageContainer.textContent= error
+        console.error(error)
+        imageContainer.textContent= "Oh dear, something went wrong!!"
     }
 }
